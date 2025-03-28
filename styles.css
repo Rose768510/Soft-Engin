@@ -35,10 +35,15 @@ header{
     margin-left: 320px;
     margin-right: 1rem;
 }
-
+.toggle-text{
+    display: none;
+}
 
 p{
     color: rgb(99, 95, 95);
+}
+#toggle-menu{
+    display: none;
 }
 
 @media(max-width: 800px) {
@@ -50,5 +55,50 @@ p{
         font-size: 0.9rem;
         margin-left: 230px;
         margin-right: 0.5rem;
+    }
+    #toggle-menu{
+        display: none;
+    }
+    .toggle-text{
+        display: none;
+    }
+}
+
+@media(max-width: 480px){
+    #navbar{
+        display: flex;
+        height: 4rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    .hidden{
+        display: none;
+    }
+    #toggle-menu{
+        border: none;
+        font-size: 2.5rem;
+        display: block;
+        cursor: pointer;
+        border: none;
+        background-color: inherit;
+        margin-right: 4rem;
+    }
+    .toggle-text{
+        display: block;
+        top: 0;
+        font-weight: 600;
+    }
+    #main-doc{
+        margin-top: 5rem;
+        width: 95%;
+        margin-left:  auto;
+        margin-right: auto;
+    }
+    #main-doc header{
+        font-size: 1.3rem;
+        font-weight: 600;
     }
 }
