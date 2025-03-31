@@ -3,7 +3,9 @@ body{
     margin: 0;
     display: flex;
 }
-
+#delete{
+    display: none;
+} 
 #navbar{
     top:0;
     left: 0;
@@ -51,6 +53,7 @@ p{
 
 
 @media(max-width: 800px) {
+
     #navbar{
         width: 200px;
         font-size: 0.9rem;
@@ -128,9 +131,7 @@ p{
         background-color: white;
         overflow-y: auto;
         opacity: 1;
-        margin: 0 auto;
-        padding: 1rem auto;
-
+        padding: 2rem auto 1rem;
     } 
     #nav-link{
         margin: 0 0.5rem;
@@ -139,4 +140,11 @@ p{
         display: block;
         z-index: 100;  
     } 
+    #delete{
+        display: block;
+        border: none;
+        background-color: white;
+        right: 0;
+        position: absolute;
+    }
 }
